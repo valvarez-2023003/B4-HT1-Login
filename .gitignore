@@ -1,5 +1,6 @@
 src/org/victoralvarez/system/config/Enviroment.java
-
+build/*
+dist/*
 
 
 
