@@ -11,15 +11,34 @@ package org.victoralvarez.system.model;
 public class Users {
 
     /**
-     * name lastname email user password id_user pk_users
+     * name lastname email user password idUser pk_users
      */
     private String name;
     private String lastname;
     private String email;
     private String user;
     private String password;
-    private String id_user;
+    private String idUser;
 
+    public Users(String name, String lastname, String email, String user, String password, String idUser) {
+        this.name = name;
+        this.lastname = lastname;
+        this.email = email;
+        this.user = user;
+        this.password = password;
+        this.idUser = idUser;
+    }
+
+    public Users(String name, String lastname, String email, String user, String idUser) {
+        this.name = name;
+        this.lastname = lastname;
+        this.email = email;
+        this.user = user;
+        this.idUser = idUser;
+    }
+
+    
+    
     //constructores
     public String getName() {
         return name;
@@ -61,12 +80,12 @@ public class Users {
         this.password = password;
     }
 
-    public String getId_user() {
-        return id_user;
+    public String getIdUser() {
+        return idUser;
     }
 
-    public void setId_user(String id_user) {
-        this.id_user = id_user;
+    public void setIdUser(String idUser) {
+        this.idUser = idUser;
     }
 
 }
