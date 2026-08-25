@@ -1,0 +1,25 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 25 ago 2026, 10:17:54
+    Author     : VICTOR ALVAREZ
+*/
+.form-register{
+    -fx-background-color: #1D216E;
+}
+
+.form-register Label{
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 16px;
+    /*-fx-font-family: "familia"*/
+}
+.form-register TextField, 
+.form-register PasswordField{
+-fx-border-color: #87CEEB;
+-fx-border-width: 2px;
+-fx-border-radius:5px;
+-fx-background-color: #FFFFFF;
+
+}
