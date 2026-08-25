@@ -55,7 +55,7 @@
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
             <Button fx:id="btnCancel" mnemonicParsing="false" onMouseClicked="#onCancel" text="CANCELAR" />
-            <Button fx:id="btnCreateUser" mnemonicParsing="false" text="CREAR CUENTA" />
+            <Button fx:id="btnCreateUser" mnemonicParsing="false" onMouseClicked="#onCreateUser" text="CREAR CUENTA" />
          </children>
       </HBox>
    </children>
