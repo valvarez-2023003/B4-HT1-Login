@@ -25,11 +25,39 @@ public class Validations {
         }
         return isEmpty;
     }
-    
-    public Boolean validarLenghtText(String text, int lenghtMax){
-return text.length() <= lenghtMax;
+
+    public Boolean validateLengthText(String text, int lenghtMax) {
+        return text.length() <= lenghtMax;
     }
-    public Boolean validarEmail(String Email){
+
+    public Boolean validarEmail(String Email) {
+        return true;
+    }
+
+    public Boolean validateEmail(String email) {
+        //validar el error de doble punto
+        int dotCount = 0;
+        int arrobeCount = 0;
+
+        //VALIDA LA EXISTENCIA DE PUNTOS CONSECUTIVOS
+        for (int index = 0; index < email.length(); index++) {
+            if (email.charAt(index) == '.') {
+                dotCount++;
+            }
+            if (dotCount > 1) {
+                return false;
+            }
+
+        }
+        //VALIDA LA EXISTENCIA DE UN UNICO ARROBA
+        for (int index = 0; index < email.length(); index++) {
+            if (email.charAt(index) == '@') {
+                arrobeCount++;
+            }
+            if (arrobeCount > 1) {
+                return false;
+            }
+        }
         return true;
     }
 }
