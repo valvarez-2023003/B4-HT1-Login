@@ -18,6 +18,7 @@ public class UserRepository
     
     //ConexionDB
     private ConexionDB conexionDB = ConexionDB.getInstanciaConexionDB();
+    public UserRepository(){}
     @Override
     public void create(Users users) {
         try{
@@ -33,7 +34,9 @@ public class UserRepository
             
             callSP.close(); //Liberar los recursos
         } catch (Exception e){
-            
+            System.out.println("ERROR AL CREAR USUARIO");
+            System.out.println(e.getMessage());
+            e.printStackTrace();
         }
     }
 }

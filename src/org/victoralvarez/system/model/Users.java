@@ -20,25 +20,27 @@ public class Users {
     private String password;
     private String idUser;
 
-    public Users(String name, String lastname, String email, String user, String password, String idUser) {
+    public Users() {
+    }
+
+    public Users(String idUser, String email, String name, String lastname, String password, String user) {
+        this.idUser = idUser;
+        this.email = email;
         this.name = name;
         this.lastname = lastname;
-        this.email = email;
-        this.user = user;
         this.password = password;
-        this.idUser = idUser;
+        this.user = user;
+
     }
 
-    public Users(String name, String lastname, String email, String user, String idUser) {
+    public Users(String password, String email, String name, String lastname, String user) {
+        this.password = password;
+        this.email = email;
         this.name = name;
         this.lastname = lastname;
-        this.email = email;
         this.user = user;
-        this.idUser = idUser;
     }
 
-    
-    
     //constructores
     public String getName() {
         return name;
