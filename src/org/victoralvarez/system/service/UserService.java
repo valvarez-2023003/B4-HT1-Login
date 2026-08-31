@@ -14,11 +14,12 @@ import org.victoralvarez.system.utils.Validations;
  * @author informatica
  */
 public class UserService {
-        private Validations validate = new Validations();
+
+    private Validations validate = new Validations();
     private AlertInformation alertInfo = new AlertInformation();
     private UserRepository userRepo = new UserRepository();
 
-    public UserStatus createUser(String user, String name, String lastName, String email, String password){
+    public UserStatus createUser(String user, String name, String lastName, String email, String password) {
         if (validate.emtyText(user) == true
                 || validate.emtyText(name) == true
                 || validate.emtyText(lastName) == true
@@ -27,12 +28,19 @@ public class UserService {
             alertInfo.viewAlert("ERROR", "ERROR DE CAMPOS VACIOS", "ERROR DE CAMPO", "DEJO CAMPOS VACIOS DEL FORMULARIO");
             return UserStatus.FIELDS_EMPTY;
         }
-        try{
+        try {
             Users newUser = new Users(password, email, name, lastName, user);
             userRepo.create(newUser);
             return UserStatus.USER_CREATED;
-        }catch(Exception e){
+        } catch (Exception e) {
             return UserStatus.ERROR_USER_CREATE;
         }
+    }
+
+    public boolean existsUserOrEmail(String userOrEmail) {
+        if (validate.emtyText(userOrEmail)) {
+            return false;
+        }
+        return userRepo.existsUserOrEmail(userOrEmail);
     }
 }

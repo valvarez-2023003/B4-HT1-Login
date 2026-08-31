@@ -4,6 +4,7 @@
  */
 package org.victoralvarez.system.repository;
 import java.sql.CallableStatement;
+import java.sql.ResultSet;
 import org.victoralvarez.system.config.ConexionDB;
 import org.victoralvarez.system.model.Users;
 
@@ -11,32 +12,51 @@ import org.victoralvarez.system.model.Users;
  *
  * @author informatica
  */
-public class UserRepository
-        implements UserInterface {
-    //CallableStatement
+public class UserRepository implements UserInterface {
+
     private CallableStatement callSP;
-    
-    //ConexionDB
+    private ResultSet resultSet;
     private ConexionDB conexionDB = ConexionDB.getInstanciaConexionDB();
-    public UserRepository(){}
+
+    public UserRepository() {
+    }
+
     @Override
-    public void create(Users users) {
-        try{
-            callSP = conexionDB.getConnection().prepareCall("{call sp_create_users(?,?,?,?,?)}");
-            
-            callSP.setString(1, users.getName());
-            callSP.setString(2, users.getLastname());
-            callSP.setString(3, users.getEmail());
-            callSP.setString(4, users.getUser());
-            callSP.setString(5, users.getPassword());
-            
+    public void create(Users user) {
+        try {
+            callSP = conexionDB.getConnection().prepareCall("{call sp_create_users(?, ?, ?, ?, ?)}");
+            callSP.setString(1, user.getName());
+            callSP.setString(2, user.getLastname());
+            callSP.setString(3, user.getEmail());
+            callSP.setString(4, user.getUser());
+            callSP.setString(5, user.getPassword());
             callSP.execute();
-            
-            callSP.close(); //Liberar los recursos
-        } catch (Exception e){
-            System.out.println("ERROR AL CREAR USUARIO");
-            System.out.println(e.getMessage());
+            callSP.close();
+        } catch (Exception e) {
+            System.out.println("ERROR AL CREAR USUARIO EN BD");
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public boolean existsUserOrEmail(String userOrEmail) {
+        boolean exists = false;
+        try {
+            callSP = conexionDB.getConnection().prepareCall("SELECT COUNT(*) FROM Users WHERE user = ? OR email = ?");
+            callSP.setString(1, userOrEmail);
+            callSP.setString(2, userOrEmail);
+            resultSet = callSP.executeQuery();
+
+            if (resultSet.next()) {
+                exists = resultSet.getInt(1) > 0;
+            }
+
+            resultSet.close();
+            callSP.close();
+        } catch (Exception e) {
+            System.out.println("ERROR AL VERIFICAR EXISTENCIA DE USUARIO");
+            e.printStackTrace();
+        }
+        return exists;
     }
 }

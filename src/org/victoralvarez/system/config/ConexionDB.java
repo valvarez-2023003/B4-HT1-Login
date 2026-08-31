@@ -24,7 +24,9 @@ public class ConexionDB {
         } catch (ClassNotFoundException classNotFound) {
             System.out.println("ERROR DE CLASE NO ENCONTRADA ");
         } catch (SQLException sqlException) {
-            System.out.println("ERROR DE CONEXION SQL ");
+            System.out.println("ERROR DE CONEXION SQL: " + sqlException.getMessage());
+            sqlException.printStackTrace();
+
         } catch (Exception e) {
             System.out.println("ERROR PADRE " + e.getMessage());
         }
@@ -37,8 +39,6 @@ public class ConexionDB {
     public void setConnection(Connection connection) {
         this.connection = connection;
     }
-    
-    
 
     public static ConexionDB getInstanciaConexionDB() {
         if (instanciaConexionDB == null) {

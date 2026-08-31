@@ -30,34 +30,29 @@ public class Validations {
         return text.length() <= lenghtMax;
     }
 
-    public Boolean validarEmail(String Email) {
-        return true;
-    }
 
     public Boolean validateEmail(String email) {
-        //validar el error de doble punto
-        int dotCount = 0;
         int arrobeCount = 0;
 
-        //VALIDA LA EXISTENCIA DE PUNTOS CONSECUTIVOS
-        for (int index = 0; index < email.length(); index++) {
-            if (email.charAt(index) == '.') {
-                dotCount++;
-            }
-            if (dotCount > 1) {
+        // 1. VALIDA QUE NO EXISTAN PUNTOS CONSECUTIVOS (..)
+        for (int index = 0; index < email.length() - 1; index++) {
+            if (email.charAt(index) == '.' && email.charAt(index + 1) == '.') {
                 return false;
             }
-
         }
-        //VALIDA LA EXISTENCIA DE UN UNICO ARROBA
+
+        // 2. VALIDA LA EXISTENCIA DE UN ÚNICO ARROBA
         for (int index = 0; index < email.length(); index++) {
             if (email.charAt(index) == '@') {
                 arrobeCount++;
             }
-            if (arrobeCount > 1) {
-                return false;
-            }
         }
+
+        // Si tiene más de un arroba o ninguno, es inválido
+        if (arrobeCount != 1) {
+            return false;
+        }
+
         return true;
     }
 }

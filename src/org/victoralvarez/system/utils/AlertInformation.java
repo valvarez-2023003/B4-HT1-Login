@@ -29,7 +29,7 @@ AlertType tipo = switch (tipoAlerta.toUpperCase()) {
 case "INFO", "INFORMATION" -> AlertType.INFORMATION;
 case "WARNING", "WARN" -> AlertType.WARNING;
 case "ERROR", "ERR" -> AlertType.ERROR;
-case "CONF IRMATION", "CONFIRM" -> AlertType.CONFIRMATION;
+case "CONFIRMATION", "CONFIRM" -> AlertType.CONFIRMATION;
 case "NONE" -> AlertType.NONE ;
 default -> AlertType.INFORMATION;
 }; // Si el tipo no es reconocido, se muestra una de información por defecto

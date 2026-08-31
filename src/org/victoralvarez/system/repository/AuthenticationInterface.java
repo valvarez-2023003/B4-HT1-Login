@@ -3,14 +3,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package org.victoralvarez.system.repository;
+
 import org.victoralvarez.system.model.Users;
+
 /**
  *
- * @author informatica
+ * @author victo
  */
-public interface UserInterface {
-
-    void create(Users user);
-
-    boolean existsUserOrEmail(String userOrEmail);
+public interface AuthenticationInterface {
+    Users login(String usernameOrEmail, String password);
 }
