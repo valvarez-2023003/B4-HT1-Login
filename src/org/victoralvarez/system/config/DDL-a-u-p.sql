@@ -25,6 +25,25 @@ DELIMITER $$
     END$$
 DELIMITER ;
 
+DELIMITER $$
+CREATE PROCEDURE sp_login(
+    IN user_or_email_p VARCHAR(50),
+    IN password_p VARCHAR(35)
+)
+BEGIN
+    SELECT 
+        id_user AS idUser,
+        name,
+        lastname,
+        email,
+        user,
+        password
+    FROM Users
+    WHERE (user = user_or_email_p OR email = user_or_email_p)
+      AND password = password_p;
+END$$
+DELIMITER ;
+
 
 CALL sp_create_users("a","a","a@","a","a123");
 SELECT * FROM Users;

@@ -3,18 +3,30 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Informatica/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/V.A.%20-%202023003_MAT/B4/s2/auditoria-usuarios-productos/src/org/victoralvarez/system/utils/Validations.java</file>
-            <file>file:/C:/Users/Informatica/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/V.A.%20-%202023003_MAT/B4/s2/auditoria-usuarios-productos/src/org/victoralvarez/system/repository/UserInterface.java</file>
-            <file>file:/C:/Users/Informatica/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/V.A.%20-%202023003_MAT/B4/s2/auditoria-usuarios-productos/src/org/victoralvarez/system/resource/images/pibble.png</file>
-            <file>file:/C:/Users/Informatica/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/V.A.%20-%202023003_MAT/B4/s2/auditoria-usuarios-productos/src/org/victoralvarez/system/controller/RegisterUserController.java</file>
-            <file>file:/C:/Users/Informatica/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/V.A.%20-%202023003_MAT/B4/s2/auditoria-usuarios-productos/src/org/victoralvarez/system/resource/images/town.png</file>
-            <file>file:/C:/Users/Informatica/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/V.A.%20-%202023003_MAT/B4/s2/auditoria-usuarios-productos/src/org/victoralvarez/system/utils/ViewFactory.java</file>
-            <file>file:/C:/Users/Informatica/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/V.A.%20-%202023003_MAT/B4/s2/auditoria-usuarios-productos/src/org/victoralvarez/system/resource/images/dog.jpg</file>
-            <file>file:/C:/Users/Informatica/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/V.A.%20-%202023003_MAT/B4/s2/auditoria-usuarios-productos/src/org/victoralvarez/system/resource/styles/RegisterUserStyles.css</file>
-            <file>file:/C:/Users/Informatica/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/V.A.%20-%202023003_MAT/B4/s2/auditoria-usuarios-productos/src/org/victoralvarez/system/repository/UserRepository.java</file>
-            <file>file:/C:/Users/Informatica/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/V.A.%20-%202023003_MAT/B4/s2/auditoria-usuarios-productos/src/org/victoralvarez/system/controller/LoginController.java</file>
-            <file>file:/C:/Users/Informatica/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/V.A.%20-%202023003_MAT/B4/s2/auditoria-usuarios-productos/src/org/victoralvarez/system/resource/images/pibblebonito.png</file>
-            <file>file:/C:/Users/Informatica/OneDrive%20-%20Fundación%20Kinal%20-Alumnos-/Escritorio/V.A.%20-%202023003_MAT/B4/s2/auditoria-usuarios-productos/src/org/victoralvarez/system/resource/styles/LoginStyles.css</file>
+            <file>file:/C:/Users/victo/OneDrive/Escritorio/prueba/B4-HT1-Login/src/org/victoralvarez/system/ClasePrincipal.java</file>
+            <file>file:/C:/Users/victo/OneDrive/Escritorio/prueba/B4-HT1-Login/src/org/victoralvarez/system/config/ConexionDB.java</file>
+            <file>file:/C:/Users/victo/OneDrive/Escritorio/prueba/B4-HT1-Login/src/org/victoralvarez/system/config/Enviroment.java</file>
+            <file>file:/C:/Users/victo/OneDrive/Escritorio/prueba/B4-HT1-Login/src/org/victoralvarez/system/config/DDL-a-u-p.sql</file>
+            <file>file:/C:/Users/victo/OneDrive/Escritorio/prueba/B4-HT1-Login/src/org/victoralvarez/system/controller/LoginController.java</file>
+            <file>file:/C:/Users/victo/OneDrive/Escritorio/prueba/B4-HT1-Login/src/org/victoralvarez/system/controller/RegisterUserController.java</file>
+            <file>file:/C:/Users/victo/OneDrive/Escritorio/prueba/B4-HT1-Login/src/org/victoralvarez/system/model/Users.java</file>
+            <file>file:/C:/Users/victo/OneDrive/Escritorio/prueba/B4-HT1-Login/src/org/victoralvarez/system/repository/UserInterface.java</file>
+            <file>file:/C:/Users/victo/OneDrive/Escritorio/prueba/B4-HT1-Login/src/org/victoralvarez/system/repository/UserRepository.java</file>
+            <file>file:/C:/Users/victo/OneDrive/Escritorio/prueba/B4-HT1-Login/src/org/victoralvarez/system/resource/styles/LoginStyles.css</file>
+            <file>file:/C:/Users/victo/OneDrive/Escritorio/prueba/B4-HT1-Login/src/org/victoralvarez/system/resource/styles/RegisterUserStyles.css</file>
+            <file>file:/C:/Users/victo/OneDrive/Escritorio/prueba/B4-HT1-Login/src/org/victoralvarez/system/service/UserService.java</file>
+            <file>file:/C:/Users/victo/OneDrive/Escritorio/prueba/B4-HT1-Login/src/org/victoralvarez/system/service/UserStatus.java</file>
+            <file>file:/C:/Users/victo/OneDrive/Escritorio/prueba/B4-HT1-Login/src/org/victoralvarez/system/utils/AlertInformation.java</file>
+            <file>file:/C:/Users/victo/OneDrive/Escritorio/prueba/B4-HT1-Login/src/org/victoralvarez/system/utils/SceneManager.java</file>
+            <file>file:/C:/Users/victo/OneDrive/Escritorio/prueba/B4-HT1-Login/src/org/victoralvarez/system/utils/Validations.java</file>
+            <file>file:/C:/Users/victo/OneDrive/Escritorio/prueba/B4-HT1-Login/src/org/victoralvarez/system/utils/ViewFactory.java</file>
+            <file>file:/C:/Users/victo/OneDrive/Escritorio/prueba/B4-HT1-Login/src/org/victoralvarez/system/repository/AuthenticationInterface.java</file>
+            <file>file:/C:/Users/victo/OneDrive/Escritorio/prueba/B4-HT1-Login/src/org/victoralvarez/system/repository/AuthenticationRepository.java</file>
+            <file>file:/C:/Users/victo/OneDrive/Escritorio/prueba/B4-HT1-Login/src/org/victoralvarez/system/service/AuthStatus.java</file>
+            <file>file:/C:/Users/victo/OneDrive/Escritorio/prueba/B4-HT1-Login/src/org/victoralvarez/system/service/AuthenticationService.java</file>
+            <file>file:/C:/Users/victo/OneDrive/Escritorio/prueba/B4-HT1-Login/src/org/victoralvarez/system/controller/DashboardController.java</file>
+            <file>file:/C:/Users/victo/OneDrive/Escritorio/prueba/B4-HT1-Login/src/org/victoralvarez/system/view/DashboardView.fxml</file>
+            <file>file:/C:/Users/victo/OneDrive/Escritorio/prueba/B4-HT1-Login/src/org/victoralvarez/system/view/LoginView.fxml</file>
         </group>
     </open-files>
 </project-private>
